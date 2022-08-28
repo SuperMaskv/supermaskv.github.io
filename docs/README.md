@@ -1,48 +1,30 @@
----
-home: true
-layout: Blog
-icon: home
-title: Blog Home
-heroImage: /logo.svg
-heroText: the name of your blog
-tagline: You can put your slogan here
-heroFullScreen: true
-projects:
-  - icon: project
-    name: project name
-    desc: project detailed description
-    link: https://your.project.link
+# Windows 偏好设置
 
-  - icon: link
-    name: link name
-    desc: link detailed description
-    link: https://link.address
+## 软件
 
-  - icon: book
-    name: book name
-    desc: Detailed description of the book
-    link: https://link.to.your.book
+### MacType
 
-  - icon: article
-    name: article name
-    desc: Detailed description of the article
-    link: https://link.to.your.article
+解决 Windows 上字体模糊的问题。
 
-  - icon: friend
-    name: friend name
-    desc: Detailed description of friend
-    link: https://link.to.your.friend
+### Listary
 
-  - icon: /logo.svg
-    name: custom item
-    desc: Detailed description of this custom item
-    link: https://link.to.your.friend
+快速找到需要的文件或文件夹。
 
-footer: customize your footer text
----
+### MouseInc
 
-This is a blog home page demo.
+全局鼠标手势，解决手需要频繁在键盘和鼠标间移动的问题，提高操作效率。
 
-To use this layout, you should set both `layout: Blog` and `home: true` in the page front matter.
+```javascript
+// 下一个桌面
+[ [ "SendKeys", "Ctrl+Win+Right" ] ]
+// 上一个桌面
+[ [ "SendKeys", "Ctrl+Win+Left" ] ]
+```
 
-For related configuration docs, please see [blog homepage](https://vuepress-theme-hope.github.io/v2/guide/blog/home/).
+### PowerToys
+
+Microsoft 出品的 Windows 使用工具集合
+
+### Windows Terminal
+
+Microsoft 出品的 Windows 终端管理工具
