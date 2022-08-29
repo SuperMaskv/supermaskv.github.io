@@ -17,9 +17,12 @@ export default hopeTheme({
             icon: "home"
         },
         {
-            text: "dot files",
+            text: "环境配置",
             link: "/dot-files",
             icon: "setting"
         }
-    ]
+    ],
+    sidebar:{
+        "/dot-files/" : "structure"
+    }
 });
