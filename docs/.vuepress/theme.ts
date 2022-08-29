@@ -6,7 +6,7 @@ export default hopeTheme({
     author: 'SuperMaskv',
     logo: '/icon.png',
     darkmode: "disable",
-    iconAssets: "iconfont",
+    iconAssets: "fontawesome",
     plugins: {
         blog: true,
     },
@@ -14,15 +14,33 @@ export default hopeTheme({
         {
             text: "首页",
             link: "/",
-            icon: "home"
+            icon: "house"
+        },
+        {
+            text: "算法",
+            link: "/algorithm",
+            icon: "cubes"
+        },
+        {
+            text: "后端",
+            link: "/back-end",
+            icon: "code"
+        },
+        {
+            text: "机器学习",
+            link: "/machine-learning",
+            icon: "diagram-project"
         },
         {
             text: "环境配置",
             link: "/dot-files",
-            icon: "setting"
+            icon: "gear"
         }
     ],
-    sidebar:{
-        "/dot-files/" : "structure"
+    sidebar: {
+        "/dot-files/": "structure",
+        "/algorithm/": "structure",
+        "/back-end/": "structure",
+        "/machine-learning/": "structure",
     }
 });
