@@ -60,7 +60,7 @@ public class Q1 {
 }
 ```
 
-## 冒牌排序
+## 冒泡排序
 
 ```java
 import java.io.BufferedReader;
