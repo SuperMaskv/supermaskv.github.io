@@ -39,7 +39,19 @@ export default hopeTheme({
     ],
     sidebar: {
         "/dot-files/": "structure",
-        "/algorithm/": "structure",
+        "/algorithm/": [
+            {
+                text: '算法',
+                link: 'README.md'
+            },
+            {
+                text: '热身',
+                collapsable: true,
+                children: [
+                    'day1.md', 'day2.md', 'day3.md'
+                ]
+            }
+        ],
         "/back-end/": "structure",
         "/machine-learning/": "structure",
     }
