@@ -48,7 +48,7 @@ export default hopeTheme({
                 text: '热身',
                 collapsable: true,
                 children: [
-                    'day1.md', 'day2.md', 'day3.md', "day4.md"
+                    'day1.md', 'day2.md', 'day3.md', "day4.md", "day5.md"
                 ]
             }
         ],
