@@ -34,7 +34,7 @@ public class MyBitmap {
 ## 使用位运算实现加减乘除
 
 - a^b 等于a和b无进位相加
-- (a&b)>>1 等于a和b的进位信息
+- (a&b)<<1 等于a和b的进位信息
 
 ```java
 public class Q2 {

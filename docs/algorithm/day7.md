@@ -6,6 +6,8 @@
 
 相比合并2个升序链表，合并K个升序链表的难度在于快速在K个候选中选择最小值，可以借助PriorityQueue的O(long(n))快速排序达到目的。
 
+[合并2个升序链表](/algorithm/day5.html#合并两个有序链表)
+
 ```java
 public ListNode mergeKLists(ListNode[] lists) {
     if (lists == null || lists.length == 0) return null;
