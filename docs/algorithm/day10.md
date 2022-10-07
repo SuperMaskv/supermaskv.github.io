@@ -78,3 +78,61 @@ public class Q2 {
     }
 }
 ```
+
+## 递归实现快排
+
+```java
+public class Q3 {
+    /**
+     * impl quick sort using recursion
+     */
+    public void quickSort(int[] arr) {
+        if (arr == null || arr.length < 2) return;
+        process(arr, 0, arr.length - 1);
+    }
+
+    private void process(int[] arr, int left, int right) {
+        if (left >= right) return;
+        int[] border = partition(arr, left, right);
+        if (border == null) return;
+        int eqLeft = border[0];
+        int eqRight = border[1];
+        process(arr, left, eqLeft - 1);
+        process(arr, eqRight + 1, right);
+    }
+
+    /**
+     * 根据arr[right]将arr分为3个部分，依次为小于arr[right]的区域、等于arr[right]的区域，大于arr[right]的区域。
+     * 返回等于arr[right]的边界
+     */
+    private int[] partition(int[] arr, int left, int right) {
+        // 如果需要操作的区间元素个数小于1个，直接返回
+        if (left >= right) return null;
+        // 小于arr[right]区域的右边界
+        int ltRight = left - 1;
+        // 大于arr[right]区域的左边界
+        int gtLeft = right;
+        int cur = left;
+        while (cur < gtLeft) {
+            if (arr[cur] < arr[right]) {
+                swap(arr, cur, ltRight + 1);
+                ltRight++;
+                cur++;
+            } else if (arr[cur] > arr[right]) {
+                swap(arr, cur, gtLeft - 1);
+                gtLeft--;
+            } else {
+                cur++;
+            }
+        }
+        swap(arr, gtLeft, right);
+        return new int[]{ltRight + 1, gtLeft};
+    }
+
+    private void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+```
